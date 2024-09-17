@@ -5,23 +5,7 @@
   "repo": "https://github.com/dompling/Scriptable",
   "apps": [
     {
-      "version": "1.0.0",
-      "description": "单个安装，添加作者订阅，在 app 中运行，单个安装文件",
-      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/widget.Install.js",
-      "thumb": "https://img.icons8.com/clouds/344/downloading-updates.png",
-      "name": "widget.Install",
-      "title": "单个安装"
-    },
-    {
-      "version": "1.0.0",
-      "description": "全量安装",
-      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/2YaInstall.js",
-      "thumb": "https://img.icons8.com/clouds/344/download-2.png",
-      "name": "2YaInstall",
-      "title": "全量安装"
-    },
-    {
-      "version": "1.0.6",
+      "version": "1.1.0",
       "description": "DmYY组件库",
       "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js",
       "thumb": "https://img.icons8.com/clouds/344/settings.png",
@@ -29,6 +13,12 @@
       "title": "DmYY",
       "html": [
         "<h4 align=\"center\">更新说明</h4>",
+        "v1.1.0",
+        "<li>修复 boxjs 读取问题</li>",
+        "v1.0.8",
+        "<li>兼容 ios15 系统，图标引起脚本一直转圈问题</li>",
+        "v1.0.7",
+        "<li>处理背景图在 12mini 下错位的情况</li>",
         "v1.0.6",
         "<li>优化菜单，增加菜单图标</li>",
         "v1.0.5",
@@ -69,6 +59,12 @@
       "html": [
         "<h3 align=\"center\">京东组件教程</h3>",
         "<p align=\"center\"><iframe src=\"https://www.youtube.com/embed/7_RkDdn3J1A\" width=\"100%\" height=\"100%\"></iframe></p>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
       ]
     },
     {
@@ -98,7 +94,13 @@
       "scriptURL": "https://raw.githubusercontent.com/dompling/scriptableTsx/master/scripts/BiliBili.js",
       "thumb": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png",
       "name": "BiliBili",
-      "title": "今日番剧"
+      "title": "今日番剧",
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     },
     {
       "version": "1.0.0",
@@ -134,7 +136,13 @@
       "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/Calendar.js",
       "thumb": "https://img.icons8.com/clouds/344/edit-calendar.png",
       "name": "Calendar",
-      "title": "日历函数"
+      "title": "日历函数",
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     },
     {
       "version": "1.0.0",
@@ -373,6 +381,12 @@
         "<br/>",
         "<h4>Mobile登陆地址接口：</h4>",
         "<li>请自行使用代理软件查看搜索即可，操作方式类似 PC 登陆地址的查看步骤</li>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
       ]
     },
     {
@@ -409,11 +423,17 @@
     },
     {
       "version": "1.0.0",
-      "description": "显示定位信息的油价使用的情况",
-      "scriptURL": "https://raw.githubusercontent.com/dompling/scriptableTsx/master/scripts/TodayOilPrice.js",
+      "description": "获取当前省份油价",
+      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/Oild.js",
       "thumb": "https://img.icons8.com/clouds/344/engine-oil-level.png",
       "name": "TodayOilPrice",
-      "title": "今日油价"
+      "title": "今日油价",
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     },
     {
       "version": "1.0.0",
@@ -421,24 +441,92 @@
       "scriptURL": "https://raw.githubusercontent.com/dompling/scriptableTsx/master/scripts/COVID-19.js",
       "thumb": "https://img.icons8.com/clouds/344/coronavirus.png",
       "name": "COVID-19",
-      "title": "疫情日报"
+      "title": "疫情日报",
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     },
     {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "显示公历和农历，根据近期的信息会出现一个倒计时的提示信息",
       "scriptURL": "https://raw.githubusercontent.com/dompling/scriptableTsx/master/scripts/CountDown.js",
       "thumb": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/daysmatter.png",
       "name": "CountDownCalendar",
-      "title": "日历倒计时"
+      "title": "日历倒计时",
+      "html": [
+        "<h4 align=\"center\">更新说明</h4>",
+        "v1.0.1",
+        "<li>调整大尺寸排列效果</li>",
+        "<li>调整下班倒计时默认不开启</li>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     },
     {
       "version": "1.0.0",
-      "description": "低端影视的桌面小组件",
-      "scriptURL": "https://raw.githubusercontent.com/dompling/scriptableTsx/master/scripts/DdVideo.js",
-      "thumb": "https://ddrk.me/favicon-32x32.png",
-      "name": "DdVideo",
-      "title": "低端影视组件",
-      "html": ["<li>感谢 @Gideon_Senku 提供接口帮助</li>"]
+      "description": "交管 12123 违章和扣分查询",
+      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/12123.js",
+      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/a7/a1/61/a7a16170-e644-079e-a362-9eb273becf9d/AppIcon-1x_U007emarketing-0-4-0-0-85-220.png/492x0w.webp",
+      "name": "12123",
+      "title": "交管 12123",
+      "html": [
+        "<h4 align=\"center\">Token获取说明</h4>",
+        "<li>获取Token重写：<a href='https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/get_12123_token.sgmodule'>Surge 12123重写模块 </a></li>",
+        "<li>使用方法：配置重写规则，手动运行小组件，按提示跳转到 支付宝12123小程序 登录即可自动抓取/更新Token。</li>",
+        "<li>使用前，请确保您的代理APP已配置好BoxJs重写，BoxJs配置方法：<a href='https://chavyleung.gitbook.io/boxjs/'>BoxJS教程</a></li>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "description": "币种涨幅",
+      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/PriceWidgets.js",
+      "thumb": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
+      "name": "PriceWidgets",
+      "title": "网络货币",
+      "html": [
+        "<h4 align=\"center\">迁移自JSBox脚本</h4>",
+        "<li>原项目：<a href='https://github.com/wuzeyou/PriceWidgets'>wuzeyou/PriceWidgets</a></li>",
+        "<li>特别感谢大佬：<a>@Jackie Xiang</a></li>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "description": "网上国网",
+      "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/wsgw.js",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png",
+      "name": "wsgw",
+      "title": "网上国网",
+      "html": [
+        "<h4 align=\"center\">网上国网</h4>",
+        "<li>1.填写账号密码<a href=\"https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json\">BoxJS订阅</a></li>",
+        "<li>2.参考借用【@小白脸】大佬的重写和【@Yuheng0101】大佬的脚本</li>",
+        "<li>3.Surge 添加远程重写模块【<a href=\"https://raw.githubusercontent.com/dompling/Script/master/wsgw/wsgw.sgmodule\">网上国网重写</a>】、其他的请自行使用 https://script.hub 转换</li>"
+      ],
+      "depend": [
+        {
+          "name": "DmYY",
+          "scriptURL": "https://raw.githubusercontent.com/dompling/Scriptable/master/Scripts/DmYY.js"
+        }
+      ]
     }
   ]
 }
